@@ -31,7 +31,7 @@ public class MacOSWindowUtilsViewController: NSViewController {
         newVisualEffectView.blendingMode = .behindWindow
         newVisualEffectView.state = .followsWindowActiveState
         if #available(macOS 10.14, *) {
-            newVisualEffectView.material = .windowBackground
+            //newVisualEffectView.material = .windowBackground
         }
         self.view = newVisualEffectView
     }
@@ -45,7 +45,7 @@ public class MacOSWindowUtilsViewController: NSViewController {
         flutterViewController.view.autoresizingMask = [.width, .height]
         
         // Since Flutter 3.7.0 the FlutterViewController's background is black by default and therefore needs to be set to clear.
-        flutterViewController.backgroundColor = .clear
+        //flutterViewController.backgroundColor = .clear
         
         self.view.addSubview(flutterViewController.view)
     }
